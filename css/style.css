@@ -1,0 +1,246 @@
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+overflow-x: hidden;
+}
+*{
+
+  box-sizing: border-box;
+}
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .loader:before , .loader:after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+  }
+  .loader:after {
+    box-shadow: 0 2px 0 #FF3D00 inset;
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {  transform: rotate(0)}
+    100% { transform: rotate(360deg)}
+  }
+
+  #home{
+    background-image: url(../img/events-heavenly-header.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 660px;
+    color: #fff;
+
+  }
+  .homeLayer{
+    background-color: rgba(214, 46, 51, 0.6);
+    top: 0;
+    left: 0;
+  }
+  .nav-side{
+    width: 0;
+    background-color: rgba(17, 17, 17, 0.85);
+    z-index: 2;
+    padding-top: 60px;
+    overflow-x: hidden;
+  }
+  .nav-side a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    padding: 20px 8px 20px 30px;
+  }
+  .nav-side a:hover{
+    color:#FF3D00;
+  }
+  .nav-side a.closeMenu{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+  @media (max-width: 450px) {
+    .nav-side {
+        padding-top: 20px;
+    }
+    .nav-side a {
+        font-size: 18px;
+        padding: 16px 8px 20px 32px;
+    }
+}
+.nav-open{
+  cursor: pointer;
+  font-size: 20px;
+  
+}
+.homeContent .nav-open{
+  padding: 16px;
+}
+.home-bg{
+  height: 90%;
+}
+.homeContent h1{
+  font-size: 60px;
+}
+@media (max-width: 576px) {
+  #homeContent h1 {
+      font-size: 40px;
+  }
+  #home .nav-open {
+      font-size: 26px;
+  }
+  #home .nav-open span {
+      display: none;
+  }
+}
+.homeContent p{
+  font-size: 20px;
+}
+#home .nav-open{
+  top: 50%;
+}
+
+#singer{
+  margin: 100px auto;
+  /* margin-bottom: 170px; */
+}
+#singer h3{
+  padding: 10px;
+  background-color: #ee6868;
+  cursor: pointer;
+  color: #fff;
+  margin: 3px;
+}
+#singer .inner{
+  padding: 10px;
+  background-color: #ccc;
+  display: none;
+}
+
+
+#duration{
+  background-image: linear-gradient(rgba(238, 104, 104, 0.7), rgba(238, 104, 104, 0.7)), url(../img/invitation-2508607__340.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 35% 45%;
+  min-height: 380px;
+  margin-bottom: 170px;
+}
+@media (min-width: 992px) {
+  #duration {
+      background-position: 35% 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-3 {
+      width: 50%;
+  }
+}
+#duration .container{
+  padding-block: 100px;
+}
+#duration .time{
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 25px;
+  padding:15px 10px;
+  height: 180px;
+  color: #444;
+}
+#duration p{
+  margin-top: 20px;
+  color: #444;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+#contact .container{
+  width: 90%;
+  margin: auto;
+}
+#contact .head h2{
+color: #444;
+font-size: 35px;
+margin-bottom: 20px;
+font-weight: 600;
+}
+#contact .head p{
+  text-align: center;
+  color: #777;
+  font-weight: 300;
+  font-size: 18px;
+}
+#contact .info h3{
+  color: #444;
+  font-size: 20px;
+  font-weight: 600;
+}
+#contact .info p{
+  color: #777;
+  font-size: 18px;
+  text-align: center;
+  line-height: 28px;
+}
+#contact .address{
+  margin-bottom: 50px;
+}
+#contact .address p{
+  margin-bottom: 30px;
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  #contact .info p {
+      text-align: start;
+  }
+  #contact .address p{
+  text-align: center;
+  }
+}
+#contact .address i{
+  margin-right: 20px;
+  color: #ee6868;
+}
+
+#contact .socialIcon{
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+#contact .socialIcon i{
+  border: 1px solid #444;
+  margin-right: 15px;
+  width:40px;
+  height: 40px;
+  line-height: 42px;
+  color: #444;
+}
+#contact form input,
+#contact form textarea {
+    margin-bottom: 20px;
+}
+#contact form textarea{
+  height: 200px;
+  resize:vertical;
+}
+form span{
+  color: #ee6868;
+  font-size: 18px;
+}
+#contact form button{
+  background-color: #ee6868;
+  color:#fff;
+  padding:10px 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border: none;
+  margin-bottom: 70px;
+}
